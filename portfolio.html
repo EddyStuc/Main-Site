@@ -5,130 +5,157 @@ sidebar_link: true
 sidebar_sort_order: 2
 ---
 
-<div class="portfolio_sec">
+<div class="portfolio-header">
+  <h2>A sample of my learning</h2>
+  <div class="lineHorizontal__container lineHorizontal__container--leftAligned">
+    <div class="lineHorizontal lineHorizontal--long"></div>
+  </div>
+</div>
+<div class="portfolio-contain">
+  <div class="project-container">
+    <h1>Image Filter</h1>
+    <h2>Harvard CS50x</h2>
+    <h3>Language: C</h3>
+    <button
+      id="button_1"
+      data-target="simpleModal_1"
+      data-image-container="pop-up-image1"
+      data-toggle="modal"
+    >
+      Project 1
+    </button>
+  </div>
 
+  <div class="project-container">
+    <h1>Snake game</h1>
+    <h2>Home project</h2>
+    <h3>Language: JS/CSS/HTML</h3>
+    <button
+      id="button_2"
+      data-target="simpleModal_2"
+      data-image-container="pop-up-image2"
+      data-toggle="modal"
+    >
+      Project 2
+    </button>
+  </div>
 
-    <div class="row grid portfolio">
+  <div class="project-container">
+    <h1>Calculator</h1>
+    <h2>Home project</h2>
+    <h3>Language: JS/CSS/HTML</h3>
+    <button
+      id="button_3"
+      data-target="simpleModal_3"
+      data-image-container="pop-up-image3"
+      data-toggle="modal"
+    >
+      Project 3
+    </button>
+  </div>
 
-        <!--project 1 (Image filter)-->
-        <div class="col-xs-12 col-sm-6 item grid-item design">
-            <div class="project_content">
-                <div class="my__img">
-                    <img src="assets/css/assets/images/grayscale.jpg" alt="" />   
-                </div>
+  <div id="simpleModal_1" class="modal">
+    <div class="modal-window small">
+      <span class="close" data-dismiss="modal">&times;</span>
+      <h3>Image Filter</h3>
+      <p>Project page 1.</p>
+      <img
+        src="assets/css/assets/images/grayscalenew.jpg"
+        class="pop-up-image1"
+        alt="filter-code"
+      />
+      <img
+        src="assets/css/assets/images/reflectnew.jpg"
+        class="pop-up-image1"
+        alt="filter-code"
+      />
+      <img
+        src="assets/css/assets/images/blurnew.jpg"
+        class="pop-up-image1"
+        alt="filter-code"
+      />
+      <img
+        src="assets/css/assets/images/edgesnew.jpg"
+        class="pop-up-image1"
+        alt="filter-code"
+      />
+      <button class="w3-button w3-display-left" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-display-right" onclick="changeSlide(1)">
+        &#10095;
+      </button>
+      <button data-dismiss="modal">Close</button>
+    </div>
+  </div>
 
-                <div class="info">
-                    <div class="info-content">
-                        <a class="popup-with-zoom-anim ajax_popup" href="portfolio-ajax-popup/project-1.html">
-                            <h3>Image Filter</h3>
-                            <p>CS50x</p>
-                            <div class="icon">
-                                <div class="wrapper">
-                                    <i class="pe-7s-folder"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+  <div id="simpleModal_2" class="modal">
+    <div class="modal-window small">
+      <span class="close" data-dismiss="modal">&times;</span>
+      <h3>Snake game</h3>
+      <p>Project page 2.</p>
+      <img
+        src="assets/css/assets/images/snake.jpg"
+        class="pop-up-image2"
+        alt="snake-code"
+      />
+      <img
+        src="assets/css/assets/images/snakefood.jpg"
+        class="pop-up-image2"
+        alt="snake-code"
+      />
+      <img
+        src="assets/css/assets/images/snakegame.jpg"
+        class="pop-up-image2"
+        alt="snake-code"
+      />
+      <img
+        src="assets/css/assets/images/snakegrid.jpg"
+        class="pop-up-image2"
+        alt="snake-code"
+      />
+      <img
+        src="assets/css/assets/images/snakeinput.jpg"
+        class="pop-up-image2"
+        alt="snake-code"
+      />
+      <button class="w3-button w3-display-left" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-display-right" onclick="changeSlide(1)">
+        &#10095;
+      </button>
+      <button data-dismiss="modal">Close</button>
+    </div>
+  </div>
 
-            </div>
-        </div>
-
-        <!--project 2 (Image Overlay)-->
-        <div class="col-xs-12 col-sm-6 item grid-item coding">
-            <div class="project_content">
-                <div class="my_img" >
-                    <img src="assets/css/assets/images/quote.jpg" alt="" />
-                </div>
-
-                <div class="info">
-                    <div class="info-content">
-                        <a class="popup-with-zoom-anim ajax_popup" href="portfolio-ajax-popup/project-2.html">
-                            <h3>Random Quote Generator</h3>
-                            <p>FreeCodeCamp</p>
-                            <div class="icon">
-                                <div class="wrapper">
-                                    <i class="pe-7s-folder"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!--project 3 (Recover)-->
-        <div class="col-xs-12 col-sm-6 item grid-item design">
-            <div class="project_content">
-                <div class="my__img">
-                    <img src="assets/css/assets/images/delete.jpg" alt="" />    
-                </div>
-
-                <div class="info">
-                    <div class="info-content">
-                        <a class="popup-with-zoom-anim ajax_popup" href="portfolio-ajax-popup/project-3.html">
-                            <h3>Recover</h3>
-                            <p>CS50x</p>
-                            <div class="icon">
-                                <div class="wrapper">
-                                    <i class="pe-7s-folder"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!--project 4 (Image filter)-->
-        <div class="col-xs-12 col-sm-6 item grid-item design">
-            <div class="project_content">
-                <div class="my__img">
-                    <img src="assets/css/assets/images/creditcard.jpg" alt="" />   
-                </div>
-
-                <div class="info">
-                    <div class="info-content">
-                        <a class="popup-with-zoom-anim ajax_popup" href="portfolio-ajax-popup/project-4.html">
-                            <h3>Credit Card Check</h3>
-                            <p>CS50x</p>
-                            <div class="icon">
-                                <div class="wrapper">
-                                    <i class="pe-7s-folder"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!--project 5 (Image filter)-->
-        <div class="col-xs-12 col-sm-6 item grid-item design">
-            <div class="project_content">
-                <div class="my__img">
-                    <img src="assets/css/assets/images/polling.jpg" alt="" />   
-                </div>
-
-                <div class="info">
-                    <div class="info-content">
-                        <a class="popup-with-zoom-anim ajax_popup" href="portfolio-ajax-popup/project-5.html">
-                            <h3>Tideman Vote</h3>
-                            <p>CS50x</p>
-                            <div class="icon">
-                                <div class="wrapper">
-                                    <i class="pe-7s-folder"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div><!--.row-->
-</div><!--.portfolio_sec-->
+  <div id="simpleModal_3" class="modal">
+    <div class="modal-window small">
+      <span class="close" data-dismiss="modal">&times;</span>
+      <h3>Calculator</h3>
+      <p>Project page 3.</p>
+      <img
+        src="assets/css/assets/images/calculatorhtml.jpg"
+        class="pop-up-image3"
+        alt="calculator-code"
+      />
+      <img
+        src="assets/css/assets/images/calculatorcss.jpg"
+        class="pop-up-image3"
+        alt="calculator-code"
+      />
+      <img
+        src="assets/css/assets/images/calculatorjs.jpg"
+        class="pop-up-image3"
+        alt="calculator-code"
+      />
+      <button class="w3-button w3-display-left" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-display-right" onclick="changeSlide(1)">
+        &#10095;
+      </button>
+      <button data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>

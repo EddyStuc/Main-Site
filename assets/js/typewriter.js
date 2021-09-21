@@ -71,12 +71,12 @@ function setupTypewriter(t) {
 
 let typer = document.getElementById("typewriter");
 
-typewriter = setupTypewriter(typer);
-
-typewriter.type();
+if (typer) {
+  typewriter = setupTypewriter(typer);
+  typewriter.type();
+}
 
 function restart() {
   typewriter = setupTypewriter(typer);
-
   typewriter.type();
 }
