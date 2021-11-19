@@ -403,29 +403,33 @@ body {
 }
 
 .project-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
+  justify-content: center;  
   border: 1px solid rgb(88, 84, 84);
   border-radius: 3px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   position: relative; 
-  margin: 25px;
-  padding-top: 16px;
+  margin: 25px;  
   height: 250px;
-  width: 250px;
-  
+  width: 250px;  
 }
 
 .project-container h1,
 h2,
 h3 {
-  margin: 10px;  
+  margin: 3px;    
 }
 
 .project-container h3 {
   font-size: 1rem;
 }
 
+.project-container button {
+  margin-top: 5px;
+}
 
 .modal {
   position: fixed;

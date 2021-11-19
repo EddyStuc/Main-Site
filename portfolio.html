@@ -54,6 +54,34 @@ sidebar_sort_order: 2
     </button>
   </div>
 
+  <div class="project-container">
+    <h1>Readability</h1>
+    <h2>Harvard CS50x</h2>
+    <h3>Language: C</h3>
+    <button
+      id="button_4"
+      data-target="simpleModal_4"
+      data-image-container="pop-up-image4"
+      data-toggle="modal"
+    >
+      Project 4
+    </button>
+  </div>
+
+  <div class="project-container">
+    <h1>Tideman Voting</h1>
+    <h2>Harvard CS50x</h2>
+    <h3>Language: C</h3>
+    <button
+      id="button_5"
+      data-target="simpleModal_5"
+      data-image-container="pop-up-image5"
+      data-toggle="modal"
+    >
+      Project 5
+    </button>
+  </div>
+
   <div id="simpleModal_1" class="modal">
     <div class="modal-window small">
       <span class="close" data-dismiss="modal">&times;</span>
@@ -148,6 +176,56 @@ sidebar_sort_order: 2
         src="assets/css/assets/images/calculatorjs.jpg"
         class="pop-up-image3"
         alt="calculator-code"
+      />
+      <button class="w3-button w3-display-left" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-display-right" onclick="changeSlide(1)">
+        &#10095;
+      </button>
+      <button data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <div id="simpleModal_4" class="modal">
+    <div class="modal-window small">
+      <span class="close" data-dismiss="modal">&times;</span>
+      <h3>Readability</h3>
+      <p>Project page 4.</p>
+      <img
+        src="assets/css/assets/images/readabilitymain.jpg"
+        class="pop-up-image4"
+        alt="readability-code"
+      />
+      <img
+        src="assets/css/assets/images/readabilityfunc.jpg"
+        class="pop-up-image4"
+        alt="readability-code"
+      />
+      <button class="w3-button w3-display-left" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-display-right" onclick="changeSlide(1)">
+        &#10095;
+      </button>
+      <button data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <div id="simpleModal_5" class="modal">
+    <div class="modal-window small">
+      <span class="close" data-dismiss="modal">&times;</span>
+      <h3>Tideman</h3>
+      <p>Project page 5.</p>
+      <img
+        src="assets/css/assets/images/tidemanmain.jpg"
+        class="pop-up-image5"
+        alt="readability-code"
+      />
+      <img
+        src="assets/css/assets/images/tidemanfunc.jpg"
+        class="pop-up-image5"
+        alt="readability-code"
       />
       <button class="w3-button w3-display-left" onclick="changeSlide(-1)">
         &#10094;
